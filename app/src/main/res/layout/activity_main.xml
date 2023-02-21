@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="View Activity"
+            android:textColor="@color/white"
+            android:background="@drawable/selector_button"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/compose"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Compose Activity"
+            android:textColor="@color/white"
+            android:background="@drawable/selector_button"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/raw_assets"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Raw / Assets Activity"
+            android:textColor="@color/white"
+            android:background="@drawable/selector_button"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="List Activity"
+            android:textColor="@color/white"
+            android:background="@drawable/selector_button"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/grid"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Grid List Activity"
+            android:textColor="@color/white"
+            android:background="@drawable/selector_button"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/list_room"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="List + Room Activity"
+            android:textColor="@color/white"
+            android:background="@drawable/selector_button"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/retrofit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Retrofit Activity"
+            android:textColor="@color/white"
+            android:background="@drawable/selector_button"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/testing"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Testing Activity"
+            android:textColor="@color/white"
+            android:background="@drawable/selector_button"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

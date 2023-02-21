@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="Testing Sample"
+        android:background="@color/primary"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/input_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textSize="14sp"
+            android:layout_margin="15dp"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:inputType="numberDecimal"
+            android:hint="Input 1"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/input_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textSize="14sp"
+            android:layout_margin="15dp"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:inputType="numberDecimal"
+            android:hint="Input 2"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/result"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:layout_margin="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            android:inputType="numberDecimal"
+            android:hint="Result"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_sum"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:layout_margin="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="Sum"
+            android:background="@drawable/selector_button"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

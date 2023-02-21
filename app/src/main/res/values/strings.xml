@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MBKM Sample</string>
+    <string name="calculator_result">Result : %1$s</string>
+</resources>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.view.activity.ViewActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="UI with View"
+        android:background="@color/primary"/>
+
+    <include
+        android:id="@+id/frame"
+        android:layout_above="@id/footer"
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/layout_frame"/>
+
+    <include
+        android:id="@+id/linear"
+        android:visibility="gone"
+        android:layout_above="@id/footer"
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/layout_linear"/>
+
+    <include
+        android:id="@+id/relative"
+        android:visibility="gone"
+        android:layout_above="@id/footer"
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/layout_relative"/>
+
+    <include
+        android:id="@+id/constraint"
+        android:visibility="gone"
+        android:layout_above="@id/footer"
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/layout_constraint"/>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_alignParentBottom="true">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_frame"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="Frame"
+            android:background="@drawable/selector_button"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_linear"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="Linear"
+            android:background="@drawable/selector_button"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_relative"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="Relative"
+            android:background="@drawable/selector_button"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_constraint"
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="Constraint"
+            android:background="@drawable/selector_button"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
