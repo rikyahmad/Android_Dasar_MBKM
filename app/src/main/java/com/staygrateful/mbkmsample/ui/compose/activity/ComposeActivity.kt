@@ -19,9 +19,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.staygrateful.mbkmsample.R
 import com.staygrateful.mbkmsample.extension.colorResources
-import com.staygrateful.mbkmsample.ui.compose.component.LinearHorizontally
-import com.staygrateful.mbkmsample.ui.compose.component.LinearVertically
-import com.staygrateful.mbkmsample.ui.compose.component.SimpleBox
+import com.staygrateful.mbkmsample.ui.compose.component.*
 import com.staygrateful.mbkmsample.ui.compose.theme.MBKMSampleTheme
 
 class ComposeActivity : ComponentActivity() {
@@ -82,6 +80,10 @@ class ComposeActivity : ComponentActivity() {
                         LinearHorizontally()
                         TextTitle(title = "Box")
                         SimpleBox()
+                        TextTitle(title = "Constraint")
+                        ConstraintLayoutContent()
+                        TextTitle(title = "Constraint 2")
+                        DecoupledConstraintLayout()
                     }
                 }
             }
