@@ -19,7 +19,7 @@
             android:layout_height="50dp"
             android:layout_marginBottom="10dp"
             android:gravity="center"
-            android:text="View Activity"
+            android:text="@string/button_view_activity"
             android:textColor="@color/white"
             android:background="@drawable/selector_button"/>
 

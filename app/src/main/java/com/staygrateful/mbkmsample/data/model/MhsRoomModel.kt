@@ -25,4 +25,20 @@ class MhsRoomModel(
                     && oldItem.mhsUniv == newItem.mhsUniv
         }
     }
+
+    companion object {
+
+        @JvmStatic
+        val diffUtil = object : DiffUtil.ItemCallback<MhsRoomModel>() {
+            override fun areItemsTheSame(oldItem: MhsRoomModel, newItem: MhsRoomModel): Boolean {
+                return oldItem.mhsName == newItem.mhsName
+                        && oldItem.mhsUniv == newItem.mhsUniv
+            }
+
+            override fun areContentsTheSame(oldItem: MhsRoomModel, newItem: MhsRoomModel): Boolean {
+                return oldItem.mhsName == newItem.mhsName
+                        && oldItem.mhsUniv == newItem.mhsUniv
+            }
+        }
+    }
 }

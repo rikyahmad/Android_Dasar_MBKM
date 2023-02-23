@@ -30,7 +30,7 @@ fun DecoupledConstraintLayout() {
         }
 
         ConstraintLayout(
-            constraints,
+            constraintSet = constraints,
             modifier = Modifier.background(Color.Gray)
         ) {
             Button(

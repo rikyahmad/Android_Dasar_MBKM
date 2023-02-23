@@ -1,6 +1,7 @@
 package com.staygrateful.mbkmsample
 
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
@@ -49,10 +50,12 @@ class RetrofitActivity : AppCompatActivity() {
                 if (movieList != null) {
                     val result = movieList.results
                 }
+                Log.d("getMovieList", response.raw().body.toString())
             }
 
             override fun onFailure(call: Call<ResultMovie?>, t: Throwable) {
                 showMessage("Cannot get movie list : ${t.localizedMessage}")
+                Log.e("getMovieList", t.localizedMessage)
             }
         })
     }
