@@ -10,6 +10,6 @@ class CalculatorTest {
         val a = 1
         val b = 2
         val sum = Calculator.sum(a, b)
-        assertEquals(sum, 3)
+        assertEquals(3, sum)
     }
 }

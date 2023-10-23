@@ -18,13 +18,18 @@
         android:theme="@style/Theme.MBKMSample"
         tools:targetApi="31">
         <activity
+            android:name=".sample.ui.login.LoginActivity"
+            android:exported="true"
+            android:label="@string/title_activity_login"
+            android:theme="@style/Theme.AppCompat"/>
+        <activity
             android:name=".demo.SampleKotlinActivity"
-            android:theme="@style/Theme.AppCompat"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat" />
         <activity
             android:name=".demo.SampleActivity"
-            android:theme="@style/Theme.AppCompat"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat" />
         <activity
             android:name=".ui.compose.activity.ComposeActivity"
             android:exported="false" />
@@ -61,9 +66,20 @@
             android:exported="false"
             android:theme="@style/Theme.AppCompat" />
         <activity
+            android:name=".ViewModelActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".PagerActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat"/>
+        <activity android:name=".ListJavaActivity" />
+
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:theme="@style/Theme.AppCompat">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

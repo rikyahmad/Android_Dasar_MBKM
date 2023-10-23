@@ -93,6 +93,16 @@
             android:textColor="@color/white"
             android:background="@drawable/selector_button"/>
 
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/view_model"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="View Model Activity"
+            android:textColor="@color/white"
+            android:background="@drawable/selector_button"/>
+
     </LinearLayout>
 
 </androidx.core.widget.NestedScrollView>

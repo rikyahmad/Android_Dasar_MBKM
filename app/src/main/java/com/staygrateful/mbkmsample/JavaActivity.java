@@ -17,6 +17,9 @@ public class JavaActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        final String data = getIntent().getStringExtra("KEY_DATA");
+
+
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
@@ -28,29 +31,7 @@ public class JavaActivity extends AppCompatActivity {
             openActivity(ComposeActivity.class);
         });
 
-        findViewById(R.id.raw_assets).setOnClickListener(v -> {
-            openActivity(RawAssetsActivity.class);
-        });
 
-        findViewById(R.id.list).setOnClickListener(v -> {
-            openActivity(ListActivity.class);
-        });
-
-        findViewById(R.id.grid).setOnClickListener(v -> {
-            openActivity(GridListActivity.class);
-        });
-
-        findViewById(R.id.list_room).setOnClickListener(v -> {
-            openActivity(ListRoomActivity.class);
-        });
-
-        findViewById(R.id.retrofit).setOnClickListener(v -> {
-            openActivity(RetrofitActivity.class);
-        });
-
-        findViewById(R.id.testing).setOnClickListener(v -> {
-            openActivity(TestingActivity.class);
-        });
     }
 
     private void openActivity(Class<? extends Activity> clazz) {

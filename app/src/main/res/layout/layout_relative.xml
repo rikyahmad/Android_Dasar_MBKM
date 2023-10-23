@@ -12,19 +12,19 @@
         android:background="#DF1809"/>
 
     <View
-        android:id="@+id/hijau"
-        android:layout_below="@id/biru"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:background="#4CAF50"/>
-
-    <View
         android:id="@+id/biru"
         android:layout_below="@id/merah"
         android:layout_toEndOf="@id/hijau"
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:background="#3F51B5"/>
+
+    <View
+        android:id="@+id/hijau"
+        android:layout_below="@id/biru"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="#4CAF50"/>
 
     <View
         android:id="@+id/kuning"
@@ -35,8 +35,8 @@
 
     <View
         android:id="@+id/orange"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
+        android:layout_below="@id/kuning"
+        android:layout_toEndOf="@id/hijau"
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:background="#FF9800"/>

@@ -1,5 +1,7 @@
 package com.staygrateful.mbkmsample
 
+import android.content.Context
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
@@ -13,6 +15,7 @@ import kotlinx.coroutines.launch
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+
 
 class RetrofitActivity : AppCompatActivity() {
 
@@ -60,13 +63,30 @@ class RetrofitActivity : AppCompatActivity() {
         })
     }
 
+    private fun postLogin() {
+        val service = NetworkModule.Builder("ooeijfewfj")
+        val loginApi = service.postLogin(LoginRequest("1234", "password"))
+
+        //preferences to save login token & get login token
+        loginApi?.enqueue(object : Callback<LoginResponse?> {
+            override fun onResponse(call: Call<LoginResponse?>, response: Response<LoginResponse?>) {
+                val responseBody = response.body()
+                if (responseBody != null) {
+
+                }
+                Log.d("Post Login", response.raw().body.toString())
+            }
+
+            override fun onFailure(call: Call<LoginResponse?>, t: Throwable) {
+                showMessage("Cannot login : ${t.localizedMessage}")
+                Log.e("Post Login", t.localizedMessage)
+            }
+        })
+    }
+
     private fun showMessage(msg: String) {
         Toast.makeText(
             this@RetrofitActivity, msg, Toast.LENGTH_SHORT
         ).show()
-    }
-
-    companion object {
-        const val BASE_URL = "https://api.themoviedb.org"
     }
 }

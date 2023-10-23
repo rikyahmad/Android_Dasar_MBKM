@@ -21,10 +21,9 @@
         android:layout_height="50dp"
         android:layout_below="@id/merah"
         android:background="#4CAF50"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kuning" />
 
     <View
         android:id="@+id/biru"

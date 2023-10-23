@@ -62,7 +62,7 @@ object NetworkModule {
             .setLenient()
             .create()
         builder.client(okHttpClient)
-            .baseUrl(RetrofitActivity.BASE_URL)
+            .baseUrl(BASE_URL)
             //.addCallAdapterFactory(CoroutineCallAdapterFactory())
             //.addCallAdapterFactory(RxJava2CallAdapterFactory.create())
             .addConverterFactory(GsonConverterFactory.create(gson))
@@ -84,4 +84,6 @@ object NetworkModule {
             )
         )
     }
+
+    const val BASE_URL = "https://api.themoviedb.org" //https://be.dharma.dcs.stechoq.com
 }

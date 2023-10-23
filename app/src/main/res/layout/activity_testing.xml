@@ -49,6 +49,19 @@
             android:hint="Input 2"/>
 
         <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/error_result"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:layout_margin="15dp"
+            android:textStyle="bold"
+            android:textColor="#E91E63"
+            android:inputType="numberDecimal"
+            tools:text="Error Result"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/result"
             android:visibility="gone"
             android:layout_width="match_parent"
@@ -59,7 +72,7 @@
             android:textStyle="bold"
             android:textColor="@color/primary"
             android:inputType="numberDecimal"
-            android:hint="Result"/>
+            tools:text="Result"/>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_sum"

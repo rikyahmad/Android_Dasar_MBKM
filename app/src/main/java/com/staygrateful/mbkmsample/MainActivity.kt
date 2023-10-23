@@ -45,6 +45,14 @@ class MainActivity : AppCompatActivity() {
         findViewById<View>(R.id.testing).setOnClickListener {
             openActivity(TestingActivity::class.java)
         }
+
+        findViewById<View>(R.id.view_model).setOnClickListener {
+            openActivity(ViewModelActivity::class.java)
+        }
+
+        val intent = Intent(this, JavaActivity::class.java)
+        intent.putExtra("KEY_DATA", "Hallo Activity..")
+        startActivity(intent)
     }
 
     private fun openActivity(clazz: Class<out Activity>) {

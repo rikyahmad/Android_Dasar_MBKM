@@ -27,6 +27,7 @@
         android:clipToPadding="false"
         android:scrollbarStyle="outsideOverlay"
         android:padding="15dp"
+        tools:listitem="@layout/list_item_mhs"
         android:scrollbars="vertical"/>
 
     <androidx.appcompat.widget.AppCompatButton
