@@ -1,6 +1,6 @@
 {
     "config": {
-        "w" : true,
+        "w" : false,
         "u" : "https://be-breeding.sinergifarm.id",
         "n" : "Demo App"
     }
